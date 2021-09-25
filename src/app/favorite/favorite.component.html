@@ -1,0 +1,16 @@
+
+<!-- Deirective ngClass -->
+<i class="bi " 
+[ngClass]="{
+    'bi-star-fill' : isFavorite,
+    'bi-star' : !isFavorite
+}"
+
+[ngStyle]="{
+        'color': isFavorite ? 'red' : 'blue',
+        'font-size': isFavorite ? '40px' : '20px'
+}"
+
+
+(click)="myFavorite()">
+</i>
